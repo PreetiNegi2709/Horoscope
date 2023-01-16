@@ -24,7 +24,7 @@
             <img class="header_img" src="img/new_space.jpg" alt="">
         </div>
 
-        <!-- content of homepage -->
+        <!-- Find your sign -->
         <div class="content">
             <div class="headline">
                 HOROSCOPE
@@ -34,7 +34,7 @@
                     <div class="bd_elem" id="text_bd_el">
                         <h2>Find your Sign</h2>
                     </div>
-                    <div class="bd_elem" id="date_bd_el_date" >
+                    <div class="bd_elem" id="date_bd_el" >
                         <!-- <input type="input" > -->
                         <select name="bday_date_db" id="bday_date">
                             <option selected disabled>Day</option>
@@ -71,10 +71,35 @@
                             <option value="31">31</option>
                         </select>
                     </div>
+
+                    <div class="bd_elem" id="month_bd_el">
+                        <select name="bday_date_db" id="bday_month">
+                            <option selected disabled>Month</option>
+                            <option value="jan">January</option>
+                            <option value="feb">Feburary</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="sep">September</option>
+                            <option value="oct">October</option>
+                            <option value="nov">November</option>
+                            <option value="dec">December</option>
+                        </select>
+                    </div>
+
                     <div class="bd_elem" id="text_bd_el">
                         <button type="button" onclick="get_bd_date_Value()">Submit</button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- sign's table -->
+        <div class="signs_all">
+            <div class="1_box">
             </div>
         </div>
         
