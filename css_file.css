@@ -6,7 +6,7 @@
 nav{
     position: fixed;
     height: 10vh;
-    width: 100%;
+    width: 100%; 
     background-color:rgba(0, 0, 0, 0.912);
 
     /* below 2 lines aline the all list in center (horizontal - )*/
@@ -146,24 +146,27 @@ h1> a{
     color: white;
 }
 
-/* ____________________________________________________________________________________new page (capri_zodiac.html) */
-.cap_container{
-    height: 100vh; 
-    width: 100%;
-    background-color: #1b2123;
-}
-.cap_main_div{
-    max-height: 70vh;
-    width: 100%;
-    background-color: red;
-}
-.cap_img_div{
-    max-height: 70vh; min-height: 30vh;
-    max-width: 100%;
-    background-color: aqua;
-}
-.cap_img{
+/* ____________________________________new page (capri_zodiac.html) */
+
+/* .cap_img{
     max-height:50vh;
     height: auto;
     max-width: 100%;
+} */
+
+.cap_container{
+    height: 100vh; 
+    width: 100%;
+    /* background-color: #1b2123; */
 }
+.cap_first{
+    height: 70vh;
+    width: 100%;
+    background-color: red;
+    /* z-index: 20px; */
+}
+.demo{
+
+}
+
+/* dekh */
