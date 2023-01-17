@@ -1,5 +1,5 @@
 .container{
-    height: 200vh;
+    height: 160vh;
     width: 100%;
     background-color: #1b2123;
 }
@@ -7,7 +7,7 @@ nav{
     position: fixed;
     height: 10vh;
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.555);
+    background-color:rgba(0, 0, 0, 0.912);
 
     /* below 2 lines aline the all list in center (horizontal - )*/
     display: flex;
@@ -30,7 +30,8 @@ li:hover{
     cursor: pointer;
 }
 .header_img{
-    height: 60vh;
+    /* height: 60vh; */
+    max-height: 60vh;
      width: 100%;
     z-index: 2px;
     
@@ -39,13 +40,16 @@ li:hover{
 
 /* about horo */
 .content{
-    height: 22vh; width: 100%;
+    /* min-height: 22vh; max-height: 40vh; */
+    height: 22vh;
+    width: 100%;
     /* background-color: blueviolet; */
     /* display: flex;
     justify-content: center; */
 }
 .headline{
-    height: 4vh; width: 100%; float: left;
+    height: 4vh; 
+    width: 100%; float: left;
     /* background-color: blanchedalmond; */
     display: flex;
     justify-content: center;
@@ -100,9 +104,66 @@ select{
 }
 
 /* Sign's table________________________________________________________________________ */
-.signs_all{
-    background-color: cadetblue;
-    height: 70vh;
+.sign{
+    /* background-color: blue; */
+    height: 70vh; width: 100%;
+    display: flex; justify-content: center;
+    align-items: center;
 }
-.1_box{
+.signs_all{
+    /* background-color: cadetblue; */
+    height: 66vh; width: 80%;
+}
+.s_row{
+    display: flex; justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+    height: 22vh; width: 100%;
+    /* border: 4px solid black; */
+}
+.sign_box{
+    display: flex; justify-content: center;
+    align-items: center;
+
+    /* background-color: #9f2b69a9; */
+    background-color: rgb(94 75 119 / 77%);
+    /* background-color: rgba(173, 216, 230, 0.566);  */
+    height: 20vh; width: 20%; float: left;
+    border-radius: 0.2rem;
+    margin: 0.3rem; margin-bottom: 0px;
+}
+.sign_box:hover{
+    background-color: #AA336A;
+}
+.sign_box>h1{
+    font-size: 1.2rem; font-weight: 600;
+    color: white; 
+    letter-spacing: 0.08rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1> a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ____________________________________________________________________________________new page (capri_zodiac.html) */
+.cap_container{
+    height: 100vh; 
+    width: 100%;
+    background-color: #1b2123;
+}
+.cap_main_div{
+    max-height: 70vh;
+    width: 100%;
+    background-color: red;
+}
+.cap_img_div{
+    max-height: 70vh; min-height: 30vh;
+    max-width: 100%;
+    background-color: aqua;
+}
+.cap_img{
+    max-height:50vh;
+    height: auto;
+    max-width: 100%;
 }
