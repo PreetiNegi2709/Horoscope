@@ -20,6 +20,7 @@ nav{
 
 }
 li{
+    font-size: 1.2rem;
     float: left; 
     padding: 5px;
     margin: 15px; color: aliceblue;
@@ -49,7 +50,8 @@ li:hover{
 }
 .headline{
     height: 4vh; 
-    width: 100%; float: left;
+    /* width: 100%; 
+    float: left; */
     /* background-color: blanchedalmond; */
     display: flex;
     justify-content: center;
@@ -63,6 +65,7 @@ li:hover{
     /* background-color: green;  */
     display: flex; align-items: center;
 }
+
 
 /* find your horoscope _______________________________________________________________________________________________________ */
 .inp_bd{
@@ -128,7 +131,9 @@ select{
     /* background-color: #9f2b69a9; */
     background-color: rgb(94 75 119 / 77%);
     /* background-color: rgba(173, 216, 230, 0.566);  */
-    height: 20vh; width: 20%; float: left;
+    height: 20vh; 
+    min-width: 23.7%;
+    float: left;
     border-radius: 0.2rem;
     margin: 0.3rem; margin-bottom: 0px;
 }
@@ -157,16 +162,13 @@ h1> a{
 .cap_container{
     height: 100vh; 
     width: 100%;
-    /* background-color: #1b2123; */
+    background-color: #1b2123;
 }
 .cap_first{
-    height: 70vh;
+    min-height: 70vh; max-height: 100vh;
+    /* height: 70vh; */
+    /* samae hi to h normal hight ki tara esme min aur max to use hi nahi height: unset; */
     width: 100%;
     background-color: red;
-    /* z-index: 20px; */
+    /* z-index: 20; */
 }
-.demo{
-
-}
-
-/* dekh */
