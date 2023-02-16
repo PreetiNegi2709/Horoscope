@@ -159,12 +159,6 @@ h1> a{
 
 /* ____________________________________new page (capri_zodiac.html) */
 
-/* .cap_img{
-    max-height:50vh;
-    height: auto;
-    max-width: 100%;
-} */
-
 .cap_container{
     /* width: 100%; */
     /* min-height: 100vh; */
@@ -172,7 +166,7 @@ h1> a{
     display: flex;
     justify-content: center;
 }
-.content_cap{
+.content_cap {
     /* height: 100vh;
     width: 90vw; */
     /* background-color: rgb(255, 192, 192); */
@@ -204,6 +198,7 @@ h1> a{
     border: 5px solid black; */
     flex:1 1 200px;
     margin: 10px; 
+    margin-top: 40px;
 }
 #cap_card{
     height: 80vh;
@@ -301,4 +296,67 @@ h1> a{
 
 @media (max-width:800px) {
     .parent_cap_box{height: auto;}
+}
+
+
+/* ____________________________________new page (aqua_zodiac.html) */
+
+#head_aqua{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#aqua_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#aqua_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_aqua_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color:#87CEEB;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+
+/* ____________________________________new page (pisces_zodiac.html) */
+
+#head_pisces{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#pisces_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#pisces_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_pisces_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color:#98fb98;
+    display: flex;
+    justify-content: center; align-items: center; 
 }
