@@ -5,7 +5,7 @@
 }
 nav{
     position: fixed;
-    height: 10vh;
+    height: auto;
     width: 100%; 
     background-color:rgba(0, 0, 0, 0.912);
 
@@ -20,7 +20,8 @@ nav{
 
 }
 li{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 1.2vw;
     float: left; 
     padding: 5px;
     margin: 15px; color: aliceblue;
@@ -49,7 +50,8 @@ li:hover{
     justify-content: center; */
 }
 .headline{
-    height: 4vh; 
+    /* height: 4vh;  */
+    height: auto; 
     /* width: 100%; 
     float: left; */
     /* background-color: blanchedalmond; */
@@ -57,7 +59,8 @@ li:hover{
     justify-content: center;
     color: white;
     padding: 1.5rem;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 3vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 .k_horo{
@@ -84,7 +87,8 @@ li:hover{
     display: flex; align-items: center;
 }
 #text_bd_el{
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    font-size: 1.3vw;
     font-family: Arial, Helvetica, sans-serif;
     display: flex; justify-content: center;
     color: white;
@@ -141,7 +145,9 @@ select{
     background-color: #AA336A;
 }
 .sign_box>h1{
-    font-size: 1.2rem; font-weight: 600;
+    /* font-size: 1.2rem;  */
+    font-size: 1.2vw; 
+    font-weight: 600;
     color: white; 
     letter-spacing: 0.08rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -160,15 +166,139 @@ h1> a{
 } */
 
 .cap_container{
-    height: 100vh; 
-    width: 100%;
+    /* width: 100%; */
+    /* min-height: 100vh; */
     background-color: #1b2123;
+    display: flex;
+    justify-content: center;
 }
-.cap_first{
-    min-height: 70vh; max-height: 100vh;
-    /* height: 70vh; */
-    /* samae hi to h normal hight ki tara esme min aur max to use hi nahi height: unset; */
+.content_cap{
+    /* height: 100vh;
+    width: 90vw; */
+    /* background-color: rgb(255, 192, 192); */
+    /* margin: auto; */
+}
+.cap_heading{
+    height: 15vh; width: 100%;
+    /* background-color: aquamarine; */
+    display: flex; justify-content: center;
+    align-items:end;
+}
+#head_cap{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+.parent_cap_box{
+    /* height: 80vh;  */
     width: 100%;
-    background-color: red;
-    /* z-index: 20; */
+    /* background-color: lightgoldenrodyellow; */
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cap_box_pic{
+    /* width: 43vw;  */
+    /* height: 80vh;  */
+    max-width: 40vh;
+    /* background-color: lightsalmon;
+    border: 5px solid black; */
+    flex:1 1 200px;
+    margin: 10px; 
+}
+#cap_card{
+    height: 80vh;
+    max-width: 40vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 5px 10px 10px #88888851;
+}
+
+.cap_box_txt{
+    width: 43vw;
+    /* height: 80vh;  */
+    padding: 1rem;
+    /* background-color: lightgreen; */
+    /* border: 5px solid black; */
+    flex:1 1 300px; 
+    margin: 10px; 
+    
+}
+#cap_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.cap_traits{
+    /* height: auto; width: 100%; */
+    /* background-color: #AA336A; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cap_traits_row1{
+    /* height: auto; width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+.cap_traits_row2{
+    /* height: auto; width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blue; */
+} 
+.cap_traits_1{
+    display: flex;
+    /* height: 21vh; */
+     width: 44%;
+    background-color: rgba(240, 255, 255, 0.678);
+    border-radius: 0.2rem;
+    margin: 10px; 
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.min_box_cap_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color:#F0E68C;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+.min_box_cap_head_h1{
+    font-size: 0.9vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+}
+.min_box_cap_txt{
+    /* height: auto; width: 100%; */
+    margin-top: 10px;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center; align-items: center;
+}
+.min_box_cap_head_p{
+    font-size: 0.9vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+.att_cap_traits{
+    /* height: 25vh; width: 100%; */
+    /* background-color: yellow; */
+    display: flex; 
+    justify-content: center; 
+}
+.att_cap_traits_context{
+    /* height: 20vh; width: 100%; */
+    background-color: rgba(240, 255, 255, 0.678);
+    border-radius: 0.2rem;
+}
+
+@media (max-width:800px) {
+    .parent_cap_box{height: auto;}
 }
