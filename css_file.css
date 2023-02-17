@@ -1,6 +1,6 @@
 .container{
-    height: 160vh;
-    width: 100%;
+    /* height: 160vh;
+    width: 100%; */
     background-color: #1b2123;
 }
 nav{
@@ -36,6 +36,12 @@ li:hover{
     max-height: 60vh;
      width: 100%;
     z-index: 2px;
+    object-fit: cover;
+
+    /* height: 80vh;
+    max-width: 40vh;
+    width: 100%;
+    object-fit: cover; */
     
     /* border: 7px solid red; */
 }
@@ -51,7 +57,7 @@ li:hover{
 }
 .headline{
     /* height: 4vh;  */
-    height: auto; 
+    /* height: auto;  */
     /* width: 100%; 
     float: left; */
     /* background-color: blanchedalmond; */
@@ -64,7 +70,8 @@ li:hover{
     font-family: Arial, Helvetica, sans-serif;
 }
 .k_horo{
-    height: 10vh; width: 100%; float: left;
+    height: 10vh; width: 100%; 
+    float: left;
     /* background-color: green;  */
     display: flex; align-items: center;
 }
@@ -72,7 +79,8 @@ li:hover{
 
 /* find your horoscope _______________________________________________________________________________________________________ */
 .inp_bd{
-    height: 8vh;width: 100%; float: left;
+    height: 8vh;width: 100%; 
+    float: left;
     /* background-color: brown;  */
     display: flex; align-items: center;
     justify-content: center;
@@ -357,6 +365,37 @@ h1> a{
     /* height: 3vh; width: 100%; */
     padding: 0.5rem;
     background-color:#98fb98;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+
+/* ____________________________________new page (aries_zodiac.html) */
+
+#head_aries{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#aries_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#aries_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_aries_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color:#CD5C5C;
     display: flex;
     justify-content: center; align-items: center; 
 }
