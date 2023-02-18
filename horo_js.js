@@ -1,13 +1,22 @@
 //retrive data birth date
-const get_bd_date_Value = ()=>{
+sub_btn.addEventListener('click',function(){
     let birth_date= document.getElementById("bday_date").value
     let birth_month= document.getElementById("bday_month").value
     birth_date = parseInt(birth_date)
     console.log(birth_date)
     console.log(birth_month)
     horo_sign(birth_date,birth_month) //calling below funtion
-    alert(sign)
-}
+//     alert(sign);
+})
+// const get_bd_date_Value = ()=>{
+//     let birth_date= document.getElementById("bday_date").value
+//     let birth_month= document.getElementById("bday_month").value
+//     birth_date = parseInt(birth_date)
+// //     console.log(birth_date)
+// //     console.log(birth_month)
+//     horo_sign(birth_date,birth_month) //calling below funtion
+//     alert(sign)
+// }
 
 let sign
 const horo_sign = (birth_date,birth_month)=>{
@@ -51,3 +60,69 @@ const horo_sign = (birth_date,birth_month)=>{
         sign="you entered wrong date"
     
 }
+
+var modalBg = document.querySelector(".modal_bg")
+var close_mod = document.querySelector(".close_modal")
+
+sub_btn.addEventListener('click',function(e){
+        modalBg.classList.add('modal_activity')
+})
+close_mod.addEventListener('click',function(){
+        modalBg.classList.remove('modal_activity')
+})
+
+
+sub_btn.addEventListener('click',function(e){
+        if (sign == "Capricorn"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="CAPRICORN"
+        }
+        if (sign == "Aquarius"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="AQUARIUS"
+        }
+        if (sign == "Pisces"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="PISCES"
+        }
+        if (sign == "Aries"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="ARIES"
+        }
+        if (sign == "Taurus"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="TAURUS"
+        }
+        if (sign == "Gemini"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="GEMINI"
+        }
+        if (sign == "Cancer"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="CANCER"
+        }
+        if (sign == "Leo"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="LEO"
+        }
+        if (sign == "Virgo"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="VIRGO"
+        }
+        if (sign == "Libra"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="LIBRA"
+        }
+        if (sign == "Scorpio"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="SCORPIO"
+        }
+        if (sign == "Sagittarius"){
+                modal_txt.innerHTML="YOU ARE"
+                modal_txt_body.innerHTML="SAGITTARIUS"
+        }
+})
+
+// to type the sign in modal
+
+// demo.innerHTML="sjdghas"

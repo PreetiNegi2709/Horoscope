@@ -1,6 +1,6 @@
 .container{
-    /* height: 160vh;
-    width: 100%; */
+    height: 100%;
+    /* width: 100%; */
     background-color: #1b2123;
 }
 nav{
@@ -76,6 +76,60 @@ li:hover{
     display: flex; align-items: center;
 }
 
+/* modal ___________________________________________________________________________________*/
+.modal_bg{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-color: rgb(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    /* opacity: 0; */
+}
+.modal{
+    height: 30%; width: 30%;
+    background-color: white;
+    position: absolute;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.close_modal{
+    /* font-weight: bold; */
+    /* background-color: lightcoral;
+    border-radius: 100px; padding: 10px; */
+    top: 10px; right: 10px;
+    position: absolute; 
+    /* parent class bhi absolute hone chaheye is modal */
+    cursor: pointer;
+}
+.modal_activity{
+    visibility: visible;
+}
+
+.model_header{
+    width: 100%; height: 10vh;
+    background-color: 	#b34fb0;
+    display: flex;
+    justify-content: center; align-items: center;
+}
+#modal_txt{
+    font-weight: bold;
+    font-size: 2vw; color: #1b2123; 
+    letter-spacing: 0.6rem;   color: white;
+}
+.modal_body{
+    width: 100%; height: 20vh;
+    display: flex;
+    justify-content: center; align-items: center;
+}
+#modal_txt_body{
+    color: #b34fb0; font-weight: bold;
+    font-size: 2.4vw; letter-spacing: 0.2rem; 
+}
 
 /* find your horoscope _______________________________________________________________________________________________________ */
 .inp_bd{
@@ -101,6 +155,7 @@ li:hover{
     display: flex; justify-content: center;
     color: white;
 }
+
 #date_bd_el,#month_bd_el{
     display: flex; justify-content: center;
 }
@@ -396,6 +451,68 @@ h1> a{
     /* height: 3vh; width: 100%; */
     padding: 0.5rem;
     background-color:#CD5C5C;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+
+/* ____________________________________new page (taurus_zodiac.html) */
+
+#head_taurus{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#taurus_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#taurus_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_taurus_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color: #96DED1;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+
+/* ____________________________________new page (gemini_zodiac.html) */
+
+#head_gemini{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#gemini_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#gemini_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_gemini_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color: #96DED1;
     display: flex;
     justify-content: center; align-items: center; 
 }
