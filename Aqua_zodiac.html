@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css_reset.css" />
     <link rel="stylesheet" href="css_file.css" />
     <!-- for icon bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div id="nav_bar"></div>
+    <script>
+      load("menu.html");
+      function load(url) {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById("nav_bar").innerHTML = req.responseText;
+      }
+    </script>
     <div class="cap_container">
-        <!-- menu -->
-        <!-- <nav>
+      <!-- menu -->
+      <!-- <nav>
               <ul class="nav_ul_list">
                   <li href="#home">home</li>
                   <li href="#about">about</li>
@@ -21,92 +34,142 @@
                   <li href="#kn">knowledge</li>
               </ul>
           </nav> -->
-  
-        <div class="content_cap">
-          <div class="cap_heading">
-            <h1 id="head_aqua">AQUARIUS</h1>
+
+      <div class="content_cap">
+        <div class="cap_heading">
+          <h1 id="head_aqua">AQUARIUS</h1>
+        </div>
+        <div class="parent_cap_box">
+          <div class="cap_box_pic">
+            <img id="aqua_card" src="img/aqua_card.jpg" alt="" />
           </div>
-          <div class="parent_cap_box">
-            <div class="cap_box_pic">
-              <img id="aqua_card" src="img/aqua_card.jpg" alt="" />
+          <div class="cap_box_txt">
+            <div id="aqua_per_traits">
+              <h1
+                style="
+                  font-size: 1.2vw;
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+                  letter-spacing: 0.2rem;
+                  padding: 10px;
+                  color: whitesmoke;
+                "
+              >
+                Typical Aquarius personality traits
+              </h1>
+              <div class="cap_traits">
+                <div class="cap_traits_row1">
+                  <div class="cap_traits_1">
+                    <div class="min_box_aqua_head">
+                      <h1 class="min_box_cap_head_h1">Humanitarian</h1>
+                    </div>
+                    <div class="min_box_cap_txt">
+                      <p class="min_box_cap_head_p">
+                        The world is their oyster. They care what happens on our
+                        planet (and beyond). There is a deep sense of justice,
+                        liberalness and fairness in all Aquarians. They just
+                        don't "do" petty shit. This leads them, more often than
+                        not, into alternative lifestyles, campaigning, charity
+                        and green politics.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="cap_traits_1">
+                    <div class="min_box_aqua_head">
+                      <h1 class="min_box_cap_head_h1">Original (eccentric)</h1>
+                    </div>
+                    <div class="min_box_cap_txt">
+                      <p class="min_box_cap_head_p">
+                        This sign is the like the "eccentric professor" of the
+                        zodiac. Thinking outside of the box? What box? They are
+                        innovative and unique, they can dream up schemes and
+                        ideas the rest of us simply cannot. They also often wear
+                        really out there clothes or have bizarre hair dos. In
+                        our society, this typically marks them out as the
+                        eccentric of the group.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cap_traits_row2">
+                  <div class="cap_traits_1">
+                    <div class="min_box_aqua_head">
+                      <h1 class="min_box_cap_head_h1">Analytical (detached)</h1>
+                    </div>
+                    <div class="min_box_cap_txt">
+                      <p class="min_box_cap_head_p">
+                        Aquarians live (quite happily thank you) largely in
+                        their own head. Dissecting knowledge, deconstructing
+                        conventions, dreaming up dreams, thinking about outer
+                        space (seriously). You could be telling them something
+                        really personal, and they are looking at you but their
+                        face is blank. Sorry.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="cap_traits_1">
+                    <div class="min_box_aqua_head">
+                      <h1 class="min_box_cap_head_h1">Assertive (obstinate)</h1>
+                    </div>
+                    <div class="min_box_cap_txt">
+                      <p class="min_box_cap_head_p">
+                        Not one for "going with the flow", Aquarians make their
+                        own mind up and then stick to it. You can not cajole or
+                        persuade them from their viewpoint, unless you've got
+                        *evidence* i.e. data, facts, peer-reviewed analysis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="cap_box_txt">
-              <div id="aqua_per_traits">
+
+            <!-- Attractive Capricorn traits -->
+            <div class="att_cap_traits">
+              <div class="att_cap_traits_head">
                 <h1
                   style="
                     font-size: 1.2vw;
                     font-family: Georgia, 'Times New Roman', Times, serif;
-                    letter-spacing: 0.2rem; padding: 10px; color: whitesmoke;
+                    letter-spacing: 0.2rem;
+                    padding: 10px;
+                    color: whitesmoke;
                   "
                 >
-                  Typical Aquarius personality traits
+                  Attractive Aquarius traits
                 </h1>
-                <div class="cap_traits">
-                  <div class="cap_traits_row1">
-                      <div class="cap_traits_1">
-                          <div class="min_box_aqua_head">
-                              <h1 class="min_box_cap_head_h1">Humanitarian</h1>
-                          </div>
-                          <div class="min_box_cap_txt">
-                              <p class = "min_box_cap_head_p">The world is their oyster. They care what happens on our planet (and beyond). There is a deep sense of justice, liberalness and fairness in all Aquarians. They just don't "do" petty shit. This leads them, more often than not, into alternative lifestyles, campaigning, charity and green politics.</p>
-                          </div>
-                      </div>
-                      <div class="cap_traits_1">
-                          <div class="min_box_aqua_head">
-                              <h1 class="min_box_cap_head_h1">Original (eccentric)</h1>
-                          </div>
-                          <div class="min_box_cap_txt">
-                              <p class = "min_box_cap_head_p">This sign is the like the "eccentric professor" of the zodiac. Thinking outside of the box? What box? They are innovative and unique, they can dream up schemes and ideas the rest of us simply cannot. They also often wear really out there clothes or have bizarre hair dos. In our society, this typically marks them out as the eccentric of the group.</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="cap_traits_row2">
-                      <div class="cap_traits_1">
-                          <div class="min_box_aqua_head">
-                              <h1 class="min_box_cap_head_h1">Analytical (detached)</h1>
-                          </div>
-                          <div class="min_box_cap_txt">
-                              <p class = "min_box_cap_head_p">Aquarians live (quite happily thank you) largely in their own head. Dissecting knowledge, deconstructing conventions, dreaming up dreams, thinking about outer space (seriously). You could be telling them something really personal, and they are looking at you but their face is blank. Sorry.</p>
-                          </div>
-                      </div>
-                      <div class="cap_traits_1">
-                          <div class="min_box_aqua_head">
-                              <h1 class="min_box_cap_head_h1">Assertive (obstinate)</h1>
-                          </div>
-                          <div class="min_box_cap_txt">
-                              <p class = "min_box_cap_head_p">Not one for "going with the flow", Aquarians make their own mind up and then stick to it. You can not cajole or persuade them from their viewpoint, unless you've got *evidence* i.e. data, facts, peer-reviewed analysis.</p>
-                          </div>
-                      </div>
-                  </div>
+                <div class="att_cap_traits_context">
+                  <p class="min_box_cap_head_p">
+                    Aquarians are smart, friendly, open and direct. Great
+                    company (if you can catch them, because they do like their
+                    ~space~) and always happy to help, advise or support you (as
+                    long as you ASK them, because they’re not great on picking
+                    up non-verbal signals, they live in their own head a lot).
+                    Aquarians are attractive because: <br /><br />
+                  </p>
+                  <ol class="min_box_cap_head_p">
+                    <i class="bi bi-suit-diamond">
+                      They’re ~one-offs~, and their eccentric and quirky ways
+                      are refreshing. Their brain simply runs on different
+                      tracks to everyone else’s. <br />
+                    </i>
+                  </ol>
+                  <ol class="min_box_cap_head_p">
+                    <i class="bi bi-suit-diamond">
+                      They say what they think, and with great eloquence. You
+                      know where you are with them. <br />
+                    </i>
+                  </ol>
+                  <ol class="min_box_cap_head_p">
+                    <i class="bi bi-suit-diamond">
+                      They have beautiful eyes, and an enchanting, faraway look.
+                    </i>
+                  </ol>
                 </div>
-              </div>
-  
-              <!-- Attractive Capricorn traits -->
-              <div class="att_cap_traits">
-                  <div class="att_cap_traits_head">
-                      <h1 style="
-                      font-size: 1.2vw;
-                      font-family: Georgia, 'Times New Roman', Times, serif;
-                      letter-spacing: 0.2rem; padding: 10px; color: whitesmoke;
-                    ">Attractive Aquarius traits</h1>
-                      <div class="att_cap_traits_context">
-                          <p class = "min_box_cap_head_p">
-                            Aquarians are smart, friendly, open and direct. Great company (if you can catch them, because they do like their ~space~) and always happy to help, advise or support you (as long as you ASK them, because they’re not great on picking up non-verbal signals, they live in their own head a lot). Aquarians are attractive because: <br><br> </p>
-                              <ol class = "min_box_cap_head_p">
-                                 <i class="bi bi-suit-diamond"> They’re ~one-offs~, and their eccentric and quirky ways are refreshing. Their brain simply runs on different tracks to everyone else’s. <br> </i> 
-                              </ol>
-                              <ol class = "min_box_cap_head_p">
-                                 <i class="bi bi-suit-diamond"> They say what they think, and with great eloquence. You know where you are with them. <br> </i>
-                              </ol>
-                              <ol class = "min_box_cap_head_p">
-                                <i class="bi bi-suit-diamond"> They have beautiful eyes, and an enchanting, faraway look. </i>
-                              </ol>
-                      </div>
-                  </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-</body>
+    </div>
+  </body>
 </html>

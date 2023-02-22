@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 </head>
 <body>
+  <div id="nav_bar"></div>
+      <script>
+        load("menu.html");
+        function load(url) {
+          req = new XMLHttpRequest();
+          req.open("GET", url, false);
+          req.send(null);
+          document.getElementById("nav_bar").innerHTML = req.responseText;
+        }
+      </script>
     <div class="cap_container">
         <!-- menu -->
         <!-- <nav>
@@ -20,8 +30,8 @@
                   <li href="#help">help</li>
                   <li href="#kn">knowledge</li>
               </ul>
-          </nav> -->
-  
+          </nav>
+   -->
         <div class="content_cap">
           <div class="cap_heading">
             <h1 id="head_aries">ARIES</h1>

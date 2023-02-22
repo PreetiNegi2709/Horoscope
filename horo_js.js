@@ -61,7 +61,8 @@ const horo_sign = (birth_date,birth_month)=>{
     
 }
 
-var modalBg = document.querySelector(".modal_bg")
+// for modal
+let modalBg = document.querySelector(".modal_bg")
 var close_mod = document.querySelector(".close_modal")
 
 sub_btn.addEventListener('click',function(e){

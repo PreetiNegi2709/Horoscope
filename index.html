@@ -1,163 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css_reset.css">
-    <link rel="stylesheet" href="css_file.css"> <!-- css in code -->
+    <link rel="stylesheet" href="css_reset.css" />
+    <link rel="stylesheet" href="css_file.css" />
+    <!-- css in code -->
     <!-- for icon bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <!-- menu -->
+      <!-- menu -->
 
-        <!-- <div w3-include-html="menu.html"></div> -->
+      <div id="nav_bar"></div>
+      <script>
+        load("menu.html");
+        function load(url) {
+          req = new XMLHttpRequest();
+          req.open("GET", url, false);
+          req.send(null);
+          document.getElementById("nav_bar").innerHTML = req.responseText;
+        }
+      </script>
 
-        <nav>
-            <ul class="nav_ul_list">
-                <li href="#home">home</li>
-                <li href="#about">about</li>
-                <li href="#help">help</li>
-                <li href="#kn">knowledge</li>
-            </ul>
-        </nav>
-        <!-- header img -->
-        <div class="home_header_pic">
-            <img class="header_img" src="img/cover_2" alt="">
+      <!-- header img -->
+      <div class="home_header_pic">
+        <img class="header_img" src="img/cover_2" alt="" />
+      </div>
+
+      <!-- modal for horo -->
+      <div class="modal_bg">
+        <div class="modal">
+          <div class="model_header">
+            <h1 id="modal_txt">INVALID</h1>
+          </div>
+          <div class="modal_body">
+            <h1 id="modal_txt_body">TRY AGAIN</h1>
+          </div>
+          <i class="bi bi-x-circle close_modal"></i>
         </div>
-
-        <!-- modal for horo -->
-        <div class="modal_bg">
-            <div class="modal">
-                <div class="model_header">
-                    <h1 id="modal_txt">INVALID</h1>
-                </div>
-                <div class="modal_body">
-                    <h1 id="modal_txt_body">TRY AGAIN</h1>
-                </div>
-                <i class="bi bi-x-circle close_modal"></i>
+      </div>
+      <!-- Find your sign -->
+      <div class="content">
+        <div class="headline">HOROSCOPE</div>
+        <div class="k_horo">
+          <div class="inp_bd">
+            <div class="bd_elem" id="text_bd_el">
+              <h2>Find your Sign</h2>
             </div>
+            <div class="bd_elem" id="date_bd_el">
+              <!-- <input type="input" > -->
+              <select name="bday_date_db" id="bday_date">
+                <option selected disabled>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+            </div>
+
+            <div class="bd_elem" id="month_bd_el">
+              <select name="bday_date_db" id="bday_month">
+                <option selected disabled>Month</option>
+                <option value="jan">January</option>
+                <option value="feb">Feburary</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="sep">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+              </select>
+            </div>
+
+            <div class="bd_elem" id="text_bd_el">
+              <button id="sub_btn" type="button" onclick>Submit</button>
+            </div>
+          </div>
         </div>
-        <!-- Find your sign -->
-        <div class="content">
-            <div class="headline">
-                HOROSCOPE
-            </div>
-            <div class="k_horo">
-                <div class="inp_bd">
-                    <div class="bd_elem" id="text_bd_el">
-                        <h2>Find your Sign</h2>
-                    </div>
-                    <div class="bd_elem" id="date_bd_el" >
-                        <!-- <input type="input" > -->
-                        <select name="bday_date_db" id="bday_date">
-                            <option selected disabled>Day</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                        </select>
-                    </div>
+      </div>
 
-                    <div class="bd_elem" id="month_bd_el">
-                        <select name="bday_date_db" id="bday_month">
-                            <option selected disabled>Month</option>
-                            <option value="jan">January</option>
-                            <option value="feb">Feburary</option>
-                            <option value="march">March</option>
-                            <option value="april">April</option>
-                            <option value="may">May</option>
-                            <option value="june">June</option>
-                            <option value="july">July</option>
-                            <option value="august">August</option>
-                            <option value="sep">September</option>
-                            <option value="oct">October</option>
-                            <option value="nov">November</option>
-                            <option value="dec">December</option>
-                        </select>
-                    </div>
-
-                    <div class="bd_elem" id="text_bd_el">
-                        <button id="sub_btn" type="button" onclick>Submit</button>
-                    </div>
-                </div>
-            </div>
+      <!-- sign's table -->
+      <div class="sign">
+        <div class="signs_all">
+          <div class="sign_box" id="sign_box_cap">
+            <h1><a href="capri_zodiac.html">Capricorn</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_aqu">
+            <h1><a href="Aqua_zodiac.html">Aquarius</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_pis">
+            <h1><a href="pisces_zodiac.html">Pisces</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_ari">
+            <h1><a href="aries_zodiac.html">Aries</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_tau">
+            <h1><a href="taurus_zodiac.html">Taurus</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_gem">
+            <h1><a href="gemini_zodiac.html">Gemini</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_can">
+            <h1><a href="/Cancer">Cancer</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_le">
+            <h1><a href="/Leo">Leo</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_vir">
+            <h1><a href="/Virgo">Virgo</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_lib">
+            <h1><a href="/Libra">Libra</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_sco">
+            <h1><a href="Scorpio">Scorpio</a></h1>
+          </div>
+          <div class="sign_box" id="sign_box_sag">
+            <h1><a href="/Sagittarius">Sagittarius</a></h1>
+          </div>
         </div>
-
-        <!-- sign's table -->
-        <div class="sign">
-            <div class="signs_all">
-                    <div class="sign_box" id="sign_box_cap">
-                        <h1><a href="capri_zodiac.html">Capricorn</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_aqu" >
-                        <h1><a href="Aqua_zodiac.html">Aquarius</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_pis">
-                        <h1><a href="pisces_zodiac.html">Pisces</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_ari">
-                        <h1><a href="aries_zodiac.html">Aries</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_tau">
-                        <h1><a href="taurus_zodiac.html">Taurus</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_gem">
-                        <h1><a href="gemini_zodiac.html">Gemini</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_can">
-                        <h1><a href="/Cancer">Cancer</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_le">
-                        <h1><a href="/Leo">Leo</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_vir">
-                        <h1><a href="/Virgo">Virgo</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_lib">
-                        <h1><a href="/Libra">Libra</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_sco">
-                        <h1><a href="Scorpio">Scorpio</a></h1>
-                    </div>
-                    <div class="sign_box" id="sign_box_sag">
-                        <h1><a href="/Sagittarius">Sagittarius</a></h1>
-                    </div>
-            </div>
-        </div>
-        
+      </div>
+      
     </div>
 
     <script src="horo_js.js"></script>
-</body>
+  </body>
 </html>
