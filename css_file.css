@@ -516,3 +516,34 @@ h1> a{
     display: flex;
     justify-content: center; align-items: center; 
 }
+
+/* ____________________________________new page (cancer_zodiac.html) */
+
+#head_cancer{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#cancer_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#cancer_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_cancer_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color: #E5E4E2 ;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
