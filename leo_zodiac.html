@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_reset.css" />
+    <link rel="stylesheet" href="css_file.css" />
+    <!-- for icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+<body>
+  <div id="nav_bar"></div>
+      <script>
+        load("menu.html");
+        function load(url) {
+          req = new XMLHttpRequest();
+          req.open("GET", url, false);
+          req.send(null);
+          document.getElementById("nav_bar").innerHTML = req.responseText;
+        }
+      </script>
+    <div class="cap_container">
+        <!-- menu -->
+        <!-- <nav>
+              <ul class="nav_ul_list">
+                  <li href="#home">home</li>
+                  <li href="#about">about</li>
+                  <li href="#help">help</li>
+                  <li href="#kn">knowledge</li>
+              </ul>
+          </nav> -->
+  
+        <div class="content_cap">
+          <div class="cap_heading">
+            <h1 id="head_leo">LEO</h1>
+          </div>
+          <div class="parent_cap_box">
+            <div class="cap_box_pic">
+              <img id="leo_card" src="img/gemini_card_2.jpg" alt="" />
+            </div>
+            <div class="cap_box_txt">
+              <div id="leo_per_traits">
+                <h1
+                  style="
+                    font-size: 1.2vw;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    letter-spacing: 0.2rem; padding: 10px; color: whitesmoke;
+                  "
+                >
+                  Typical Leo personality traits
+                </h1>
+                <div class="cap_traits">
+                  <div class="cap_traits_row1">
+                      <div class="cap_traits_1">
+                          <div class="min_box_leo_head">
+                              <h1 class="min_box_cap_head_h1">Vivacious (read: attention seeking)</h1>
+                          </div>
+                          <div class="min_box_cap_txt">
+                              <p class = "min_box_cap_head_p">Leos come in-built with a flair for drama and flamboyance. Every social interaction is viewed as a scene in which they are the entertainer, commanding the audience, receiving a standing ovation for every joke, anecdote and tall tale (they love a tall tale.) This means they’re never dull, they can definitely ‘work’ the crowd… but give someone else the stage? Never.</p>
+                          </div>
+                      </div>
+                      <div class="cap_traits_1">
+                          <div class="min_box_leo_head">
+                              <h1 class="min_box_cap_head_h1">Lives the good life (read: spoilt)</h1>
+                          </div>
+                          <div class="min_box_cap_txt">
+                              <p class = "min_box_cap_head_p">If they’re going to do it, they’re going to do it big, and it’s going to be the best. There is no second fiddle for Leo, or any justifiable obstacle as to why they shouldn’t have exactly what they want, when they want it. This is great if you’re riding in their wake, benefiting from their ‘demands’, but not so much fun if you’re the one trying to enforce some rules / order / boundaries (good luck with that).</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="cap_traits_row2">
+                      <div class="cap_traits_1">
+                          <div class="min_box_leo_head">
+                              <h1 class="min_box_cap_head_h1">Natural leader (read: egomaniac)</h1>
+                          </div>
+                          <div class="min_box_cap_txt">
+                              <p class = "min_box_cap_head_p">It doesn’t even occur to a Leo that someone else might be better placed to lead, they just step up to the plate. Born ready. And their regal aura usually does the trick, ushering others to just fall in line. However, this can come over as arrogance sometimes, or a mind-blowingly annoying ‘I know best’ attitude. They LOVE giving (unsolicited) advice.</p>
+                          </div>
+                      </div>
+                      <div class="cap_traits_1">
+                          <div class="min_box_leo_head">
+                              <h1 class="min_box_cap_head_h1">Popular (read: approval-obsessed)</h1>
+                          </div>
+                          <div class="min_box_cap_txt">
+                              <p class = "min_box_cap_head_p">Leos work so hard socially, and they’re usually the belle of the ball, the queen bee, the squad hero (give them that crown, they deserve it), but their demands for praise, appreciation, gratitude (for that advice you never took) and all-round admiration can get a BIT exhausting. You may need 'time outs' to recharge your applause vigour!</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Attractive Capricorn traits -->
+              <div class="att_cap_traits">
+                  <div class="att_cap_traits_head">
+                      <h1 style="
+                      font-size: 1.2vw;
+                      font-family: Georgia, 'Times New Roman', Times, serif;
+                      letter-spacing: 0.2rem; padding: 10px; color: whitesmoke;
+                    ">Attractive Leo traits</h1>
+                      <div class="att_cap_traits_context">
+                          <p class = "min_box_cap_head_p">
+                            Leos love to protect the vulnerable and stick up for others, and they are the patron saint of underdogs! This makes them come off as proud, strong and kind all at the same time - it’s adorable. A Leo will command your attention and draw praise and admiration from you naturally, it’s just how this proud cat rolls. Leos are attractive because:<br><br> </p>
+                              <ol class = "min_box_cap_head_p">
+                                 <i class="bi bi-suit-diamond"> They are BIG on looking good, love being pampered and glamourised! This star sign is definitely high up on the ‘High Maintenance’ scale.
+                                  <br> </i> 
+                              </ol>
+                              <ol class = "min_box_cap_head_p">
+                                 <i class="bi bi-suit-diamond"> Their hair is always on point. Leos always have a great ~mane~.
+                                  <br> </i>
+                              </ol>
+                              <ol class = "min_box_cap_head_p">
+                                <i class="bi bi-suit-diamond"> Their Fire sign element is warm and loving. They have a magnetic personality.</i>
+                              </ol>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -172,24 +172,19 @@ select{
 }
 
 /* Sign's table________________________________________________________________________ */
+/* Sign's table________________________________________________________________________ */
 .sign{
     /* background-color: blue; */
     /* height: 70vh;  */
     width: 100%;
     display: flex; justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 .signs_all{
+    display: grid;
     /* background-color: cadetblue; */
-    /* height: 66vh; */
-     width: 80%;
-}
-.s_row{
-    display: flex; justify-content: center;
-    align-items: center;
-    /* background-color: bisque; */
-    height: 22vh; width: 100%;
-    /* border: 4px solid black; */
+    width: 80%;
+    margin-bottom: 10vh;
 }
 .sign_box{
     display: flex; justify-content: center;
@@ -199,11 +194,19 @@ select{
     background-color: rgb(94 75 119 / 77%);
     /* background-color: rgba(173, 216, 230, 0.566);  */
     height: 20vh; 
-    min-width: 23.7%;
-    float: left;
+    /* float: left; */
     border-radius: 0.2rem;
     margin: 0.3rem; margin-bottom: 0px;
 }
+@media (min-width: 400px) {
+    .signs_all { grid-template-columns: repeat(2, 1fr); }
+  }
+@media (min-width: 700px) {
+    .signs_all { grid-template-columns: repeat(3, 1fr); }
+  }
+@media (min-width: 1000px) {
+    .signs_all { grid-template-columns: repeat(4, 1fr); }
+  }
 .sign_box:hover{
     background-color: #AA336A;
 }
@@ -543,7 +546,162 @@ h1> a{
 .min_box_cancer_head{
     /* height: 3vh; width: 100%; */
     padding: 0.5rem;
-    background-color: #E5E4E2 ;
+    background-color: #ecebe9 ;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+
+/* ____________________________________new page (leo_zodiac.html) */
+
+#head_leo{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#leo_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#leo_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_leo_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color: 	#F4BB44 ;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+
+/* ____________________________________new page (virgo_zodiac.html) */
+
+#head_virgo{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#virgo_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#virgo_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_virgo_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color: #7FFFD4 ;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+
+/* ____________________________________new page (libra_zodiac.html) */
+
+#head_libra{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#libra_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#libra_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_libra_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color: #F8C8DC ;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+
+/* ____________________________________new page (scorpio_zodiac.html) */
+
+#head_scorpio{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#scorpio_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#scorpio_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_scorpio_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color: #ff7171 ;
+    display: flex;
+    justify-content: center; align-items: center; 
+}
+
+/* ____________________________________new page (sagittarius_zodiac.html) */
+
+#head_sagittarius{
+    font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800; color: lightgray;
+}
+
+#sagittarius_card{
+        height: 80vh;
+        max-width: 40vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 5px 10px 10px #88888851;
+    }
+#sagittarius_per_traits{
+    /* height: 55vh; width: 100%; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.min_box_sagittarius_head{
+    /* height: 3vh; width: 100%; */
+    padding: 0.5rem;
+    background-color: 	#a1587a ;
     display: flex;
     justify-content: center; align-items: center; 
 }

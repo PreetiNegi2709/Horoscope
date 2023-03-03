@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_reset.css" />
+    <link rel="stylesheet" href="css_file.css" />
+    <!-- for icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+<body>
+  <div id="nav_bar"></div>
+      <script>
+        load("menu.html");
+        function load(url) {
+          req = new XMLHttpRequest();
+          req.open("GET", url, false);
+          req.send(null);
+          document.getElementById("nav_bar").innerHTML = req.responseText;
+        }
+      </script>
+    <div class="cap_container">
+        <!-- menu -->
+        <!-- <nav>
+              <ul class="nav_ul_list">
+                  <li href="#home">home</li>
+                  <li href="#about">about</li>
+                  <li href="#help">help</li>
+                  <li href="#kn">knowledge</li>
+              </ul>
+          </nav> -->
+  
+        <div class="content_cap">
+          <div class="cap_heading">
+            <h1 id="head_sagittarius">SAGITTARIUS</h1>
+          </div>
+          <div class="parent_cap_box">
+            <div class="cap_box_pic">
+              <img id="sagittarius_card" src="img/scorpio_card.jpg" alt="" />
+            </div>
+            <div class="cap_box_txt">
+              <div id="ssagittarius_per_traits">
+                <h1
+                  style="
+                    font-size: 1.2vw;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    letter-spacing: 0.2rem; padding: 10px; color: whitesmoke;
+                  "
+                >
+                  Typical Sagittarius personality traits
+                </h1>
+                <div class="cap_traits">
+                  <div class="cap_traits_row1">
+                      <div class="cap_traits_1">
+                          <div class="min_box_sagittarius_head">
+                              <h1 class="min_box_cap_head_h1">Honest (read: tactless)</h1>
+                          </div>
+                          <div class="min_box_cap_txt">
+                              <p class = "min_box_cap_head_p">Sagittarius have #nofilter. They will say what others truly think, but would never dare utter aloud. If you want an honest opinion, then ask a Sagittarius… BUT you’d better be sure you want the whole, unvarnished truth because that is what you’ll get.</p>
+                          </div>
+                      </div>
+                      <div class="cap_traits_1">
+                          <div class="min_box_sagittarius_head">
+                              <h1 class="min_box_cap_head_h1">Adventurous (read: rebellious)</h1>
+                          </div>
+                          <div class="min_box_cap_txt">
+                              <p class = "min_box_cap_head_p">On the one hand, they love to get the wind in their fur, a new horizon on their map, and it’s all jolly good fun. On the other hand, if you’re working with them/living with them/trying to make firm plans with them… This need for freedom can be challenging. Perfect travel/weekend companions, somewhat difficult colleagues and ‘nesting’ partners.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="cap_traits_row2">
+                      <div class="cap_traits_1">
+                          <div class="min_box_sagittarius_head">
+                              <h1 class="min_box_cap_head_h1">Optimistic (read: naive))</h1>
+                          </div>
+                          <div class="min_box_cap_txt">
+                              <p class = "min_box_cap_head_p">It’s not that Sagittarians are dim-witted; they do realise that other people aren’t all wholesome or filled with good intentions. BUT their default settings are definitely turned on to ‘TRUST’ and ‘BELIEVE’. They don’t like scaremongering or whinging. They don’t want to engage with negativity or bad news until there’s no refuting it. This reluctance to err away from positivity can make them come off as naïve.</p>
+                          </div>
+                      </div>
+                      <div class="cap_traits_1">
+                          <div class="min_box_sagittarius_head">
+                              <h1 class="min_box_cap_head_h1">Independent (read: unreliable)</h1>
+                          </div>
+                          <div class="min_box_cap_txt">
+                              <p class = "min_box_cap_head_p">Although warm and loving, Sags consistently march to their own drumbeat and are not willing compromisers when it comes to stuff they didn’t dream up/plan/agree to initially. They will never NOT have a plan A, B, C, etc... so they don’t need your input really, and they don’t much want it either. They’ll do what they’re doing, whether you like it or not basically, which means you can only really rely on them when your plans/priorities align.</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Attractive Capricorn traits -->
+              <div class="att_cap_traits">
+                  <div class="att_cap_traits_head">
+                      <h1 style="
+                      font-size: 1.2vw;
+                      font-family: Georgia, 'Times New Roman', Times, serif;
+                      letter-spacing: 0.2rem; padding: 10px; color: whitesmoke;
+                    ">Attractive Sagittarius traits</h1>
+                      <div class="att_cap_traits_context">
+                          <p class = "min_box_cap_head_p">
+                            Physically courageous and brave, Sagittarians are natural dare-devils and enjoy the thrills and challenges of pushing themselves to new heights, depths, speeds or exhaustion levels! Anything and everything is possible to this bundle of energy. This makes them great fun to be around. Their most attractive traits include:<br><br> </p>
+                              <ol class = "min_box_cap_head_p">
+                                 <i class="bi bi-suit-diamond"> They're experts at flirting.
+                                  <br> </i> 
+                              </ol>
+                              <ol class = "min_box_cap_head_p">
+                                 <i class="bi bi-suit-diamond"> They often have strong bodies, with an athletic, muscular physique and stature (all that bouncing and running around).
+                                  <br> </i>
+                              </ol>
+                              <ol class = "min_box_cap_head_p">
+                                <i class="bi bi-suit-diamond"> They have a warm, friendly, outgoing nature, and are always surrounded by friends and admirers.</i>
+                              </ol>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

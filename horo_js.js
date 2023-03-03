@@ -127,3 +127,10 @@ sub_btn.addEventListener('click',function(e){
 // to type the sign in modal
 
 // demo.innerHTML="sjdghas"
+
+// menu js____________________________________________________________
+homeClick.addEventListener('click',function(e){
+        alert("ok")
+        // document.location.href="index.html";
+        // window.location.href="index.html";
+})
